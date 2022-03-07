@@ -175,7 +175,7 @@
              </div>
             </div>
             <div class="col-12 col-md-6">
-              <div class="container">
+              <div class=" d-flex justify-content-center align-items-center">
                 <div class="row">
                   <div class="col-12 col-md-6">
                     <img src="resources/img/maciekm.jpg" class="img-thumbnail rounded-circle mt-4" alt="Maciek Przybycien">
@@ -190,19 +190,54 @@
         </div>
 
        </section>
-       <section id="section-contact" class="my-5">
-
-         <h3 class="text-center dispaly-4 text-black d-flex justify-content-center align-items-center py-3">BOOK YOUR FREE CONSULTATION</h3>
-      <div class="container">
-        <div class="d-flex justify-content-center align-items-center">
-        <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
-        <script async data-uid="03cf527719" src="https://thoughtful-author-5096.ck.page/03cf527719/index.js"></script>
-      </div>
-      </div>
+      <section id="section-contact" class="my-5">
+        <div class="container d-flex justify-content-center align-items-center">
+        <!-- Button trigger modal -->
+         <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#contactModal">
+          Start your journey today
+         </button>
+        </div>
+        <!-- Modal -->
+          <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+           <div class="modal-dialog">
+             <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Please fill up the form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                    <label for="inputYourName" class=" col-form-label">Your Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputYourName">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="contactFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputPhoneNumber" class=" col-form-label">Phone Number</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="inputPhoneNumber" placeholder="+44 ...">
+                    </div>
+                  <div class="mb-3">
+                    <label for="contactFormControlTextarea1" class="form-label">Additional info</label>
+                    <textarea class="form-control" id="contactFormControlTextarea1" placeholder="Tell us more if you need" rows="3"></textarea>
+                  </div>
+                
+               <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Send</button>
+             </div>
+              </div>
+            </div>
+          </div>  
+      </section>
         
 
          
-    </div>
+    
        <section id="section-footer" class="text-center text-black d-flex justify-content-center align-items-center">
        <ul class="nav justify-content-center mt-2 mb-3">
         <li class="nav-item mt-3">

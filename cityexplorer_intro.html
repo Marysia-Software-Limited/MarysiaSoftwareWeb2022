@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="bg-video-wrap">
-    <video autoplay muted loop id="bg-screenplay-video" width="300">
+    <video autoplay muted loop id="bg-screenplay-video" playsinline>
         <source src="resources/cityexplorer/screenplay.mp4" type="video/mp4">
     </video>
     <div class="overlay">
@@ -108,15 +108,24 @@
 
         <script>
             window.onload = function () {
-                let player = document.getElementById("screenplay-video"),
-                    play = document.getElementById("screenplay-video"),
-                    bgPlayer = document.getElementById("bg-screenplay-video");
+                let bgPlayer = document.getElementById("bg-screenplay-video");
 
-                play.addEventListener("click", function () {
-                    player.play();
+                bgPlayer.addEventListener("hover", function (){
+                    bgPlayer.play();
+                    console.log("hover");
                 });
-                player.play();
-                bgPlayer.play();
+                bgPlayer.addEventListener("load", function (){
+                    bgPlayer.play();
+                    console.log("load");
+                });
+                bgPlayer.addEventListener("loadeddata", function (){
+                    bgPlayer.play();
+                    console.log("loadeddata");
+                });
+
+                console.log("start");
+                bgPlayer.currentTime = 4.8;
+                // bgPlayer.play();
             }
         </script>
 

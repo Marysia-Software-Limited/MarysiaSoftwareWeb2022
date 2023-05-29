@@ -39,6 +39,7 @@ main {
 
 section {
     background: rgba(255, 252, 239, 0.9);
+    border-radius: 30px;
 }
 #section-footer {
     min-height: 10vh;

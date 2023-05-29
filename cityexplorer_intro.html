@@ -111,15 +111,15 @@
                 let bgPlayer = document.getElementById("bg-screenplay-video");
 
                 bgPlayer.addEventListener("hover", function (){
-                    bgPlayer.play();
+                    document.getElementById("bg-screenplay-video").play();
                     console.log("hover");
                 });
                 bgPlayer.addEventListener("load", function (){
-                    bgPlayer.play();
+                    document.getElementById("bg-screenplay-video").play();
                     console.log("load");
                 });
                 bgPlayer.addEventListener("loadeddata", function (){
-                    bgPlayer.play();
+                    document.getElementById("bg-screenplay-video").play();
                     console.log("loadeddata");
                 });
 

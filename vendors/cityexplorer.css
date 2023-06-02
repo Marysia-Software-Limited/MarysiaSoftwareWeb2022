@@ -38,6 +38,16 @@ main {
     overflow-y: auto;
 }
 
+h4 {
+    
+    font-family: 'Special Elite', cursive;
+}
+h1 {
+    font-family: 'Licorice', cursive ;
+    font-size: 40px;
+    color: rgb(26, 129, 232);
+}
+
 section {
     background: rgba(255, 252, 239, 0.9);
     border-radius: 30px;

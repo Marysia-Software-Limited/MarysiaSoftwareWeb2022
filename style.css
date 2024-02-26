@@ -3,9 +3,23 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 70vh;
 }
 #section-grow {
+    background-image: url('vendors/img/abstract.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 30vh;
+}
+#section-grom {
+    background-image: url('vendors/img/abstract.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 30vh;
+}
+#section-grod {
     background-image: url('vendors/img/abstract.jpg');
     background-size: cover;
     background-position: center;
